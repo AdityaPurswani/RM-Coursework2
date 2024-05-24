@@ -45,7 +45,7 @@ app.layout = html.Div(children=[
         value=metrics[0],  # Default value
         inputStyle={'display': 'inline-block', 'margin-right': '10px'},  # Set display style
         labelStyle={'display': 'inline-block', 'margin-right': '10px'},
-        style = {'padding-left': '10px', 'padding-right': '10px'}
+        style = {'padding-left': '5px', 'padding-right': '5px'}
     ),
     dcc.Graph(id='treemap-chart'),
     ],style={'width': '50%', 'height': '100vh', 'display': 'inline-block', 'vertical-align': 'top', }),
@@ -56,8 +56,8 @@ app.layout = html.Div(children=[
                     id='diet-category-dropdown',
                     options=[{'label': diet_category, 'value': diet_category} for diet_category in dietary_data_df['Diet'].unique()],
                     value="Vegans",  inputStyle={'display': 'inline-block', 'margin-right': '10px'},  # Set display style
-        labelStyle={'display': 'inline-block', 'margin-right': '10px'},
-        style={'padding-left': '10px', 'padding-right': '10px'}
+        labelStyle={'display': 'inline-block', 'margin-right': '5px'},
+        style={'padding-left': '5px', 'padding-right': '5px'}
                 ),
                 dcc.Graph(id='choropleth-chart')
             ], style={'width': '50%', 'height': '100vh', 'display': 'inline-block', 'vertical-align': 'top', })
