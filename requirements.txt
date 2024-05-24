@@ -4,3 +4,4 @@ gunicorn
 geopandas
 plotly
 matplotlib
+openpyxl
