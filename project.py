@@ -34,6 +34,7 @@ def calculate_land_use(selected_diet_category):
 
 
 app = Dash(__name__)
+server = app.server
 
 
 app.layout = html.Div(children=[
